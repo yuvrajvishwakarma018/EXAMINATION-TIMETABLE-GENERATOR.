@@ -1,0 +1,28 @@
+EXAMINATION TIMETABLE GENERATOR — SAMPLE INPUTS
+Date format: DD-MM-YYYY
+
+TEST CASE 1 — Normal input
+Subjects: DAA, DBMS, OOP, Maths, CSA
+Start date: 12-10-2026
+Holidays: 14-10-2026
+
+TEST CASE 2 — Boundary / minimum input
+Subjects: DAA
+Start date: 18-10-2026
+Holidays: none
+
+TEST CASE 3 — Invalid input checks (run as separate attempts)
+(a) Subjects: DAA, DBMS
+    Start date: 32-10-2026
+    Expected: Invalid date. Please enter the date as DD-MM-YYYY.
+(b) Subjects: (none / empty)
+    Start date: 12-10-2026
+    Expected: At least one subject is required.
+(c) Subjects: DAA, DAA
+    Start date: 12-10-2026
+    Expected: Duplicate subject: DAA.
+
+TEST CASE 4 — Different valid scenario
+Subjects: DAA, DBMS, OOP, Maths, CSA, DM, Java
+Start date: 12-10-2026
+Holidays: none
